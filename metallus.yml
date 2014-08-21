@@ -2,7 +2,7 @@ software_groups: &software
   - "base"
 
 jobs:
-  etcd:
+  pngquant:
     builder: "make"
     software_groups: *software
     base: "ubuntu:12.04"
