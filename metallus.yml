@@ -1,5 +1,6 @@
 software_groups: &software
   - "base"
+  - "libpng"
 
 jobs:
   pngquant:
