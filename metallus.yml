@@ -1,0 +1,19 @@
+software_groups: &software
+  - "base"
+
+jobs:
+  etcd:
+    builder: "make"
+    software_groups: *software
+    base: "ubuntu:12.04"
+    packages:
+      - type: debian
+        name: pngquant
+        version: 2.3.0
+        build_depends:
+          - libpng-dev
+        depends:
+          - libpng-dev
+        repos:
+          - mxm-public
+        target: install
