@@ -2,6 +2,11 @@ software_groups: &software
   - "base"
   - "libpng"
 
+packages:
+  branch_codenames:
+    master: unstable
+    production: stable
+
 jobs:
   pngquant:
     builder: "make"
