@@ -1,6 +1,3 @@
-software_groups: &software
-  - "base"
-  - "libpng"
 
 packages:
   branch_codenames:
@@ -12,13 +9,13 @@ jobs:
     builder: "make"
     software_groups: *software
     base: "quay.io/madebymany/build-bases:trusty"
+    build_depends:
+      - libpng-dev
+      - git-core
     packages:
       - type: debian
         name: pngquant
         version: 2.3.0-1
-        build_depends:
-          - libpng-dev
-          - git-core
         depends:
           - libpng-dev
         repos:
