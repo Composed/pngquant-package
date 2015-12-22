@@ -1,4 +1,3 @@
-
 packages:
   branch_codenames:
     master: unstable
@@ -7,7 +6,6 @@ packages:
 jobs:
   pngquant:
     builder: "make"
-    software_groups: *software
     base: "quay.io/madebymany/build-bases:trusty"
     build_depends:
       - libpng-dev
