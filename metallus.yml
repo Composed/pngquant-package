@@ -1,7 +1,7 @@
 packages:
   branch_codenames:
-    master: unstable
-    production: stable
+    master: trusty-unstable
+    production: trusty-stable
 
 jobs:
   pngquant:
@@ -13,7 +13,7 @@ jobs:
     packages:
       - type: debian
         name: pngquant
-        version: 2.3.0-1
+        version: 2.3.0-2
         depends:
           - libpng-dev
         repos:
